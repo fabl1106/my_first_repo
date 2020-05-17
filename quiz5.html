@@ -16,11 +16,11 @@
     <script>
         function q1() {
             // 여기에 코드를 입력하세요
-            let check_number = $('#magicnum').val()
+            let check_num = $('#magicnum').val()
 
             $.ajax({
                 type : "GET",
-                url : "http://numbersapi.com/"+check_number,
+                url : "http://numbersapi.com/"+check_num,
                 data : {},
                 success : function(response){
                    $('#meaning').text(response) 
